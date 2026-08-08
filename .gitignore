@@ -1,1 +1,23 @@
+# Editor backups & swap files
 *~
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# OS junk
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Local tooling
+node_modules/
+.cache/
+
+# Private working notes (image/diagram planning, not part of the list)
+*IMAGES.md

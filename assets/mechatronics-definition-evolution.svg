@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" width="1200" height="560" font-family="Inter, 'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif">
+  <defs>
+    <style>
+      .t { fill:#14161A; }
+      .m { fill:#5B6270; }
+      .h1 { font-size:29px; font-weight:700; letter-spacing:-0.3px; }
+      .h2 { font-size:14.5px; }
+      .era { font-size:16px; font-weight:700; }
+      .body { font-size:12.5px; }
+      .yr { font-size:14px; font-weight:700; fill:#FFFFFF; }
+      .q { font-size:12.5px; font-style:italic; }
+      .kick { font-size:11px; font-weight:700; letter-spacing:1.1px; }
+      .foot { font-size:12px; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="560" fill="#FBFBFD"/>
+
+  <text x="40" y="52" class="t h1">What counts as "mechatronics" has moved four times</text>
+  <text x="40" y="80" class="m h2">Each industrial paradigm annexed the previous definition rather than replacing it — all five layers coexist on today's shop floor.</text>
+
+  <!-- axis -->
+  <line x1="40" y1="352" x2="1160" y2="352" stroke="#C9CFDA" stroke-width="2"/>
+  <polygon points="1160,352 1148,346 1148,358" fill="#C9CFDA"/>
+
+  <!-- ERA 1 -->
+  <g>
+    <rect x="40" y="118" width="208" height="196" rx="10" fill="#EBF1FB" stroke="#C9D8F0"/>
+    <text x="58" y="146" class="kick" fill="#2B5CB8">ORIGIN</text>
+    <text x="58" y="172" class="t era">Mechatronics</text>
+    <text x="58" y="200" class="m body">Coined at Yaskawa Electric:</text>
+    <text x="58" y="218" class="m body">machines with electronics</text>
+    <text x="58" y="236" class="m body">inside them.</text>
+    <text x="58" y="264" class="m body">Servo drives, NC machines,</text>
+    <text x="58" y="282" class="m body">early industrial robots.</text>
+    <line x1="144" y1="314" x2="144" y2="336" stroke="#2B5CB8" stroke-width="2"/>
+    <circle cx="144" cy="352" r="9" fill="#2B5CB8"/>
+    <rect x="106" y="374" width="76" height="26" rx="13" fill="#2B5CB8"/>
+    <text x="144" y="392" text-anchor="middle" class="yr">1969</text>
+  </g>
+
+  <!-- ERA 2 -->
+  <g>
+    <rect x="268" y="118" width="208" height="196" rx="10" fill="#EBF1FB" stroke="#C9D8F0"/>
+    <text x="286" y="146" class="kick" fill="#2B5CB8">INDUSTRY 3.0</text>
+    <text x="286" y="172" class="t era">Synergistic</text>
+    <text x="286" y="192" class="t era">integration</text>
+    <text x="286" y="220" class="m body">Not "mechanics plus</text>
+    <text x="286" y="238" class="m body">electronics" but co-design</text>
+    <text x="286" y="256" class="m body">from the first sketch.</text>
+    <text x="286" y="284" class="m body">The V-model. Embedded</text>
+    <text x="286" y="302" class="m body">control theory.</text>
+    <line x1="372" y1="314" x2="372" y2="336" stroke="#2B5CB8" stroke-width="2"/>
+    <circle cx="372" cy="352" r="9" fill="#2B5CB8"/>
+    <rect x="324" y="374" width="96" height="26" rx="13" fill="#2B5CB8"/>
+    <text x="372" y="392" text-anchor="middle" class="yr">1980s–90s</text>
+  </g>
+
+  <!-- ERA 3 -->
+  <g>
+    <rect x="496" y="118" width="208" height="196" rx="10" fill="#E9F6EE" stroke="#C6E3D3"/>
+    <text x="514" y="146" class="kick" fill="#1E7A44">INDUSTRY 4.0</text>
+    <text x="514" y="172" class="t era">Cyber-Physical</text>
+    <text x="514" y="192" class="t era">Systems</text>
+    <text x="514" y="220" class="m body">The unit of design stops</text>
+    <text x="514" y="238" class="m body">being one machine and</text>
+    <text x="514" y="256" class="m body">becomes a fleet + its data.</text>
+    <text x="514" y="284" class="m body">Digital twins, OPC UA,</text>
+    <text x="514" y="302" class="m body">AAS (IEC 63278-1).</text>
+    <line x1="600" y1="314" x2="600" y2="336" stroke="#1E7A44" stroke-width="2"/>
+    <circle cx="600" cy="352" r="9" fill="#1E7A44"/>
+    <rect x="562" y="374" width="76" height="26" rx="13" fill="#1E7A44"/>
+    <text x="600" y="392" text-anchor="middle" class="yr">2011</text>
+  </g>
+
+  <!-- ERA 4 -->
+  <g>
+    <rect x="724" y="118" width="208" height="196" rx="10" fill="#FDF4E9" stroke="#F0DCC0"/>
+    <text x="742" y="146" class="kick" fill="#C2670E">INDUSTRY 5.0</text>
+    <text x="742" y="172" class="t era">Human-CPS</text>
+    <text x="742" y="200" class="m body">The human is inside the</text>
+    <text x="742" y="218" class="m body">loop by design, not by</text>
+    <text x="742" y="236" class="m body">exception.</text>
+    <text x="742" y="264" class="m body">Cobots, resilience,</text>
+    <text x="742" y="282" class="m body">"ecomechatronics",</text>
+    <text x="742" y="300" class="m body">sustainability as a spec.</text>
+    <line x1="828" y1="314" x2="828" y2="336" stroke="#C2670E" stroke-width="2"/>
+    <circle cx="828" cy="352" r="9" fill="#C2670E"/>
+    <rect x="790" y="374" width="76" height="26" rx="13" fill="#C2670E"/>
+    <text x="828" y="392" text-anchor="middle" class="yr">2020</text>
+  </g>
+
+  <!-- ERA 5 -->
+  <g>
+    <rect x="952" y="118" width="208" height="196" rx="10" fill="#F5EDFD" stroke="#DCC9F0"/>
+    <text x="970" y="146" class="kick" fill="#7A3FC2">PHYSICAL AI</text>
+    <text x="970" y="172" class="t era">Embodied</text>
+    <text x="970" y="192" class="t era">intelligence</text>
+    <text x="970" y="220" class="m body">The controller is learned,</text>
+    <text x="970" y="238" class="m body">not derived. Hardware</text>
+    <text x="970" y="256" class="m body">must now be learnable.</text>
+    <text x="970" y="284" class="m body">VLAs, diffusion policies,</text>
+    <text x="970" y="302" class="m body">world models, agents.</text>
+    <line x1="1056" y1="314" x2="1056" y2="336" stroke="#7A3FC2" stroke-width="2"/>
+    <circle cx="1056" cy="352" r="9" fill="#7A3FC2"/>
+    <rect x="1010" y="374" width="92" height="26" rx="13" fill="#7A3FC2"/>
+    <text x="1056" y="392" text-anchor="middle" class="yr">2023–26</text>
+  </g>
+
+  <!-- bottom band -->
+  <rect x="40" y="424" width="1120" height="82" rx="10" fill="#FFFFFF" stroke="#D9DEE7"/>
+  <text x="60" y="452" class="kick" fill="#14161A">THE DEFINING QUESTION OF EACH ERA</text>
+  <text x="60" y="478" class="m q">1969 · "Can we put a microprocessor in it?"  →  1990 · "Can we design all domains together?"  →  2011 · "Can it talk to the rest of the plant?"</text>
+  <text x="60" y="498" class="m q">2020 · "Can a person safely work beside it?"  →  2026 · "Can it learn the task instead of being programmed for it?"</text>
+
+  <text x="40" y="536" class="m foot">awesome-mechatronics · diagram is CC0 — reuse and edit freely</text>
+</svg>

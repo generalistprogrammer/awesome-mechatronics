@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700" font-family="Inter, 'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif">
+  <defs>
+    <style>
+      .t { fill:#14161A; }
+      .m { fill:#5B6270; }
+      .h1 { font-size:29px; font-weight:700; letter-spacing:-0.3px; }
+      .h2 { font-size:14.5px; }
+      .ph { font-size:16.5px; font-weight:700; fill:#FFFFFF; }
+      .ps { font-size:12.5px; fill:#FFFFFF; opacity:0.85; }
+      .bx { font-size:14px; font-weight:650; }
+      .bs { font-size:11.5px; }
+      .lbl { font-size:11.5px; font-style:italic; }
+      .kick { font-size:11px; font-weight:700; letter-spacing:1.1px; }
+      .cell { font-size:12.5px; }
+      .foot { font-size:12px; }
+    </style>
+    <marker id="ar" markerWidth="9" markerHeight="9" refX="7.5" refY="3.2" orient="auto">
+      <path d="M0,0 L7.5,3.2 L0,6.4 z" fill="#8B93A1"/>
+    </marker>
+    <marker id="arb" markerWidth="9" markerHeight="9" refX="7.5" refY="3.2" orient="auto">
+      <path d="M0,0 L7.5,3.2 L0,6.4 z" fill="#2B5CB8"/>
+    </marker>
+    <marker id="arp" markerWidth="9" markerHeight="9" refX="7.5" refY="3.2" orient="auto">
+      <path d="M0,0 L7.5,3.2 L0,6.4 z" fill="#7A3FC2"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="700" fill="#FBFBFD"/>
+
+  <text x="40" y="52" class="t h1">Two pipelines, one discipline</text>
+  <text x="40" y="80" class="m h2">Layers 1–4 of the stack are identical in both. Only the block that decides what to do next has changed — and it is not always the right change.</text>
+
+  <!-- ================= LEFT PANEL ================= -->
+  <rect x="40" y="104" width="540" height="440" rx="12" fill="#F4F7FD" stroke="#C9D8F0"/>
+  <rect x="40" y="104" width="540" height="52" rx="12" fill="#2B5CB8"/>
+  <rect x="40" y="140" width="540" height="16" fill="#2B5CB8"/>
+  <text x="62" y="130" class="ph">Classical model-based pipeline</text>
+  <text x="62" y="148" class="ps">You write the model. You can prove things about it.</text>
+
+  <g>
+    <rect x="90" y="178" width="440" height="46" rx="8" fill="#FFFFFF" stroke="#C9D8F0"/>
+    <text x="110" y="199" class="t bx">Sensors</text>
+    <text x="110" y="216" class="m bs">encoders · IMU · force/torque · limit switches</text>
+    <line x1="310" y1="224" x2="310" y2="242" stroke="#8B93A1" stroke-width="1.6" marker-end="url(#ar)"/>
+
+    <rect x="90" y="246" width="440" height="46" rx="8" fill="#FFFFFF" stroke="#C9D8F0"/>
+    <text x="110" y="267" class="t bx">State estimation</text>
+    <text x="110" y="284" class="m bs">Kalman / EKF · complementary filters · observers</text>
+    <line x1="310" y1="292" x2="310" y2="310" stroke="#8B93A1" stroke-width="1.6" marker-end="url(#ar)"/>
+
+    <rect x="90" y="314" width="440" height="46" rx="8" fill="#FFFFFF" stroke="#C9D8F0"/>
+    <text x="110" y="335" class="t bx">Planner</text>
+    <text x="110" y="352" class="m bs">IK · trajectory generation · sampling-based planning</text>
+    <line x1="310" y1="360" x2="310" y2="378" stroke="#8B93A1" stroke-width="1.6" marker-end="url(#ar)"/>
+
+    <rect x="90" y="382" width="440" height="46" rx="8" fill="#E3ECFA" stroke="#2B5CB8" stroke-width="1.6"/>
+    <text x="110" y="403" class="t bx">Controller</text>
+    <text x="110" y="420" class="m bs">PID · LQR · MPC · impedance control</text>
+    <line x1="310" y1="428" x2="310" y2="446" stroke="#8B93A1" stroke-width="1.6" marker-end="url(#ar)"/>
+
+    <rect x="90" y="450" width="440" height="46" rx="8" fill="#FFFFFF" stroke="#C9D8F0"/>
+    <text x="110" y="471" class="t bx">Actuators → Plant</text>
+    <text x="110" y="488" class="m bs">motor drive · transmission · mechanism</text>
+  </g>
+
+  <path d="M90,473 L64,473 L64,201 L90,201" fill="none" stroke="#2B5CB8" stroke-width="1.6" stroke-dasharray="4 3" marker-end="url(#arb)"/>
+  <text x="66" y="520" class="m lbl">Feedback loop closes on estimated state</text>
+
+  <!-- ================= RIGHT PANEL ================= -->
+  <rect x="620" y="104" width="540" height="440" rx="12" fill="#F9F4FE" stroke="#DCC9F0"/>
+  <rect x="620" y="104" width="540" height="52" rx="12" fill="#7A3FC2"/>
+  <rect x="620" y="140" width="540" height="16" fill="#7A3FC2"/>
+  <text x="642" y="130" class="ph">Learned visuomotor pipeline</text>
+  <text x="642" y="148" class="ps">You collect the data. The model is implicit.</text>
+
+  <g>
+    <rect x="670" y="178" width="440" height="46" rx="8" fill="#FFFFFF" stroke="#DCC9F0"/>
+    <text x="690" y="199" class="t bx">Observations</text>
+    <text x="690" y="216" class="m bs">RGB cameras (wrist + scene) · joint states · language</text>
+    <line x1="890" y1="224" x2="890" y2="242" stroke="#8B93A1" stroke-width="1.6" marker-end="url(#ar)"/>
+
+    <rect x="670" y="246" width="440" height="46" rx="8" fill="#FFFFFF" stroke="#DCC9F0"/>
+    <text x="690" y="267" class="t bx">Pretrained backbone</text>
+    <text x="690" y="284" class="m bs">SigLIP / DINOv2 vision encoder + language model</text>
+    <line x1="890" y1="292" x2="890" y2="310" stroke="#8B93A1" stroke-width="1.6" marker-end="url(#ar)"/>
+
+    <rect x="670" y="314" width="440" height="46" rx="8" fill="#F0E6FB" stroke="#7A3FC2" stroke-width="1.6"/>
+    <text x="690" y="335" class="t bx">Action head</text>
+    <text x="690" y="352" class="m bs">discrete tokens · diffusion · flow matching</text>
+    <line x1="890" y1="360" x2="890" y2="378" stroke="#8B93A1" stroke-width="1.6" marker-end="url(#ar)"/>
+
+    <rect x="670" y="382" width="440" height="46" rx="8" fill="#FFFFFF" stroke="#DCC9F0"/>
+    <text x="690" y="403" class="t bx">Action chunk (H × DoF)</text>
+    <text x="690" y="420" class="m bs">next ~10–50 actions, streamed via real-time chunking</text>
+    <line x1="890" y1="428" x2="890" y2="446" stroke="#8B93A1" stroke-width="1.6" marker-end="url(#ar)"/>
+
+    <rect x="670" y="450" width="440" height="46" rx="8" fill="#FFFFFF" stroke="#DCC9F0"/>
+    <text x="690" y="471" class="t bx">Joint controller → Actuators → Plant</text>
+    <text x="690" y="488" class="m bs">the classical inner loop, unchanged</text>
+  </g>
+
+  <path d="M670,473 L644,473 L644,201 L670,201" fill="none" stroke="#7A3FC2" stroke-width="1.6" stroke-dasharray="4 3" marker-end="url(#arp)"/>
+  <text x="646" y="520" class="m lbl">Loop closes on raw pixels — no explicit state</text>
+
+  <!-- ================= DECISION BAND ================= -->
+  <rect x="40" y="566" width="1120" height="94" rx="10" fill="#FFFFFF" stroke="#D9DEE7"/>
+  <line x1="600" y1="566" x2="600" y2="660" stroke="#E3E7EE"/>
+
+  <text x="62" y="592" class="kick" fill="#2B5CB8">REACH FOR CLASSICAL WHEN</text>
+  <text x="62" y="616" class="m cell">the dynamics are known · the state is observable · precision is the spec</text>
+  <text x="62" y="636" class="m cell">the behaviour must be certified · you have no data and no way to collect it</text>
+  <text x="62" y="654" class="m cell">a failure is expensive and you must be able to explain it</text>
+
+  <text x="622" y="592" class="kick" fill="#7A3FC2">REACH FOR LEARNED WHEN</text>
+  <text x="622" y="616" class="m cell">contact is rich · objects deform · the scene is cluttered or varies</text>
+  <text x="622" y="636" class="m cell">the task is easier to demonstrate than to specify · language conditioning</text>
+  <text x="622" y="654" class="m cell">you can collect demonstrations cheaply and evaluate honestly</text>
+
+  <text x="40" y="686" class="m foot">awesome-mechatronics · diagram is CC0 — reuse and edit freely</text>
+</svg>
